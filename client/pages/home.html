@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/index.css">
+    <link rel="stylesheet" href="../assets/form.css">
+    <link rel="stylesheet" href="../assets//lista.css">
+    <title>Projeto</title>
+</head>
+<body>
+    <main>
+        <section id="formulario">
+            <form id="form">
+                <label for="nome" id="label_nome">Nome</label>
+                <input type="text" name="nome" id="nome_form">
+                <label for="idade" id="label_idade">Idade</label>
+                <input type="number" name="idade" id="idade_form">
+                <a  id="botao-submit" href=""><i class="large material-icons">add_circle</i></a>
+                
+            </form>
+        </section>
+        <section id="lista">
+           <table id="tabela">
+               <thead>
+                   <tr>
+                       <th>Nome</th>
+                       <th>Idade</th>
+                       <th><i class="material-icons">code</i></th>
+                       <th><i class="material-icons">code</i></th>                     
+                   </tr>
+               </thead>
+               <tbody id="lista-pessoas">
+                   <tr>
+                       <td>Gustavo</td>
+                       <td>19</td>
+                       <td><a class="botao-editar" href=""><i class="material-icons">edit</i></a></td>
+                       <td><a class="botao-remover" href=""><i class="material-icons">delete</i></a></td>
+                   </tr>
+               </tbody>
+           </table>
+        </section>
+    </main>
+</body>
+
+<script src="../script/jquery.js"></script>
+<script src="../script/materialize.min.js"></script>
+<script src="../script/adicionandoEleitor.js"></script>
+</html>

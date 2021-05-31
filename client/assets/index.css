@@ -1,0 +1,11 @@
+body {
+    background-color: #FFF8DC;
+    font-family: "Caveat", cursive;
+}
+main {
+    display: flex;
+}
+
+.large {
+    size: 6rem;
+}
