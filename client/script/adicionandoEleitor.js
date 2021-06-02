@@ -1,17 +1,27 @@
-$("#botao-submit").click(insereLinha)
-
-
-function insereLinha() {
+$("#botao-submit").on("click",function(e) {
+    e.preventDefault()
     var corpoTabela = $("#lista").find("tbody")
-    var nomeForm = $("#nome_form").text()
-    var idadeForm = $("#idade_form").text()
+    var nomeForm = $("#nome_form").val()
+    var idadeForm = $("#idade_form").val()
     var linha = novaLinha(nomeForm, idadeForm)
     
     corpoTabela.append(linha)
-    
-    
+    linha.find(".botao-remover").click(removeLinha)
+})
+
+
+
+function removeLinha(e) {
+    e.preventDefault()
+    var linhaRemovida = $(this).parent().parent()
+    linhaRemovida.fadeOut(1000)
+    setTimeout(function() {
+        linhaRemovida.remove()
+    }, 1000)
 }
 
+
+    
 
 function novaLinha(nome, idade) {
     var linha = $("<tr>")
