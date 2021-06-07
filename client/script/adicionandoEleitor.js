@@ -1,3 +1,4 @@
+
 $("#botao-submit").on("click",function(e) {
     e.preventDefault()
     var corpoTabela = $("#lista").find("tbody")
@@ -6,6 +7,7 @@ $("#botao-submit").on("click",function(e) {
     var linha = novaLinha(nomeForm, idadeForm)
     
     corpoTabela.append(linha)
+     add
     linha.find(".botao-remover").click(removeLinha)
 })
 
